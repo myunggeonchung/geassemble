@@ -1,0 +1,26 @@
+<mat-form-field appearance="fill" class="WasherFormField">
+    <mat-label style="font-weight: bolder;">Select Washer function</mat-label>
+    <mat-select [(ngModel)]="selectedFunction">
+        <mat-option *ngFor="let function of itemService.getWasherFunctions()" [value]="function">
+            {{function.CommandId}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<div *ngIf="selectedFunction.CommandId==='Power'">
+    <mat-form-field appearance="fill">
+        <mat-label style="font-weight: bolder;">Power Option</mat-label>
+        <mat-select [(ngModel)]="selectedFunction.MetaValue">
+            <mat-option *ngFor="let meta of washerPowerMeta" [value]='meta'>
+                {{meta}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="saveButtonContainer">
+    <button mat-fab color="accent" aria-label="Example icon button with a plus one icon"
+        (click)="itemService.addMergeFunction(selectedFunction);snackBar.openSnackBar()">
+        <mat-icon>save_alt</mat-icon>
+    </button>
+</div> 

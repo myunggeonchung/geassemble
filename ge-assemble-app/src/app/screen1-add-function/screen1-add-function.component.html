@@ -1,0 +1,61 @@
+<div class="boardmain">
+  <mat-drawer-container class="FunctionDrawerContainer">
+    <mat-drawer class="OvenFunctionDrawer" mode="side" opened>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <div>
+          <mat-button-toggle class="OvenFunctionButton" value="bold" (click)="changeScreenMode(1)">
+            <div><img width="30" height="30" src="../../assets/Oven.png"></div>
+            Oven
+          </mat-button-toggle>
+        </div>
+      </mat-button-toggle-group>
+    </mat-drawer>
+
+    <mat-drawer class="WasherFunctionDrawer" mode="side" opened>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <div>
+          <mat-button-toggle class="WasherFunctionButton" value="bold" (click)="changeScreenMode(2)">
+            <div><img width="30" height="30" src="../../assets/Washer copy.png"></div>
+            Washer
+          </mat-button-toggle>
+        </div>
+      </mat-button-toggle-group>
+    </mat-drawer>
+
+    <mat-drawer class="AcFunctionDrawer" mode="side" opened>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <div>
+          <mat-button-toggle class="AcFunctionButton" value="bold" (click)="changeScreenMode(3)">
+            <div><img width="30" height="30" src="../../assets/AirCon.png"></div>
+            A.C
+          </mat-button-toggle>
+        </div>
+      </mat-button-toggle-group>
+    </mat-drawer>
+
+    <mat-drawer class="WriteFunctionDrawer" mode="side" opened>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <div>
+          <mat-button-toggle class="WriteFunctionButton" value="bold" (click)="changeScreenMode(4)">
+            <div><img width="30" height="30" src="../../assets/NFC.png"></div>
+            Write
+          </mat-button-toggle>
+        </div>
+      </mat-button-toggle-group>
+    </mat-drawer>
+
+  </mat-drawer-container>
+
+  <div class=function_mainscreen>
+    <div *ngIf="currentMode===1">
+      <app-screen1-oven-function></app-screen1-oven-function>
+    </div>
+    <div *ngIf="currentMode===2">
+      <app-screen1-washer-function></app-screen1-washer-function>
+    </div>
+    <div *ngIf="currentMode===3">
+      <app-screen1-ac-function></app-screen1-ac-function>
+    </div>
+    <div *ngIf="currentMode===4">
+      <app-screen1-merge-function></app-screen1-merge-function>
+</div>

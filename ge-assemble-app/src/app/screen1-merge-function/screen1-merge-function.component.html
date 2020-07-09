@@ -1,0 +1,49 @@
+<head>
+    <meta http-equiv="origin-trial"
+        content="AoJs1BWN33mH677NcXjFQ0ONC5pPkPC82lcgJ0fcp4tPDj84Ne5e1/8NEBlf5ZLqRtQXJ+KKUBySUXebtKs1agcAAABqeyJvcmlnaW4iOiJodHRwczovL2dlYS1hc3NlbWJsZS52ZXJjZWwuYXBwOjQ0MyIsImZlYXR1cmUiOiJXZWJORkMiLCJleHBpcnkiOjE1OTU5ODA3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+</head>
+
+<div>
+    <mat-form-field appearance="fill" class="tagName">
+        <mat-label>Input Tag Name</mat-label>
+        <input matInput type="text" [(ngModel)]="itemService.tagName">
+        <button mat-button *ngIf="itemService.tagName" matSuffix mat-icon-button aria-label="Clear"
+            (click)="itemService.tagName=''">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+</div>
+
+<div>
+    <mat-form-field appearance="fill" class="MergeFunctionFormField">
+        <mat-label style="font-weight: bolder;">Select Location</mat-label>
+        <mat-select [(ngModel)]="itemService.currentLocation">
+            <mat-option *ngFor="let location of locations" [value]="location">
+                {{location}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="addedFunctions">
+    <mat-form-field class="function-chip-list">
+        <mat-chip-list #chipList aria-label="function selection">
+            <mat-chip *ngFor="let function of itemService.getMergeFunctions()" [selectable]="selectable"
+                [removable]="removable" (removed)="itemService.removeMergeFunction(function)" style="width: auto;">
+                {{function.ApplianceId}}.{{function.CommandId}}
+                <div *ngIf="(function.CommandId==='Temp') || (function.CommandId==='Cooking')">.Degree(Celcius)</div>
+                <div *ngIf="function.MetaValue!=''">.{{function.MetaValue}}</div>
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+            </mat-chip>
+            <mat-chip *ngIf="itemService.getMergeFunctions().length===0" style="width: 250px;">
+                Empty
+            </mat-chip>
+        </mat-chip-list>
+    </mat-form-field>
+</div>
+
+<div class="saveButtonContainer">
+    <button mat-fab color="accent" (click)="createTagData()">
+        <mat-icon>save_alt</mat-icon>
+    </button>
+</div>

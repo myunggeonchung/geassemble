@@ -1,0 +1,48 @@
+<div class="board-main">
+  <div class="main">
+    <table>
+      <tr *ngFor="let item of tagInformation | evenodd: 'odd'; index as i">
+        <td [style.background]="getBackgroundColor(getIndex(item))">
+          <div class="countarea">
+            <span class="countstring">
+              {{this.getTagCount(getIndex(item))}}
+            </span>
+            <button (click)="openModal(getIndex(item))" class="informationbutton">
+              <img src="assets/information.png" alt="btnImages" class="btnImages">
+            </button>
+          </div>
+          <div class="informationarea">
+            <p class="taglocationname">
+              {{this.getTagName(getIndex(item))}}
+              <br>
+              {{this.getLocationName(getIndex(item))}}
+            </p>
+          </div>
+          <div *ngFor="let name of this.getApplianceName(getIndex(item))" class="applianceareaspan">
+            <img src={{this.getApplianceImageName(name)}} alt="btnImages" class="btnImages"/>
+          </div>
+        </td>
+        <td [style.background]="getBackgroundColor(getIndexPlusOne(item))">
+          <div class="countarea">
+            <span class="countstring">{{this.getTagCount(getIndexPlusOne(item))}}</span>
+            <button (click)="openModal(getIndexPlusOne(item))" class="informationbutton">
+              <img src="assets/information.png" alt="btnImages" class="btnImages">
+            </button>
+          </div>
+          <div class="informationarea">
+            <p class="taglocationname">
+              {{this.getTagName(getIndexPlusOne(item))}}
+              <br>
+              {{this.getLocationName(getIndexPlusOne(item))}}
+            </p>
+          </div>
+          <div class="appliancearea">
+            <div *ngFor="let name of this.getApplianceName(getIndexPlusOne(item))" class="applianceareaspan">
+              <img src={{this.getApplianceImageName(name)}} alt="btnImages" class="btnImages"/>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

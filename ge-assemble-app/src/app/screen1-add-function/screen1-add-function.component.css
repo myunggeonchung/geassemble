@@ -1,0 +1,104 @@
+.boardmain {
+  width: 100%;
+  height: 100%;
+  background:url('/assets/img_backgournd_board.png');
+  background-size : cover;
+}
+
+
+.FunctionDrawerContainer {
+  position: relative;
+  top: 2px;
+  width: 80px;
+  height: 900px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-color: white;
+}
+
+.OvenFunctionDrawer{
+  position:relative;
+  width: 80px;
+  height: 205px;
+  border-color: orange;
+  background-color: orange;
+}
+
+.OvenFunctionButton{
+  position:relative;
+  width: 80px;
+  height: 200px;
+  top: auto;
+  background-color: orange;
+  border-color: orange;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border-style: hidden;
+}
+
+
+.WasherFunctionDrawer{
+  position:relative;
+  width: 80px;
+  height: 205px;
+  border-color: green;
+  background-color: green;
+}
+
+.WasherFunctionButton{
+  width: 80px;
+  height: 200px;
+  background-color:green;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  overflow-y: hidden;
+}
+
+.AcFunctionDrawer{
+  position:relative;
+  width: 80px;
+  height: 205px;
+  border-color: lightskyblue;
+  background-color: lightskyblue;
+}
+
+.AcFunctionButton{
+  width: 80px;
+  height: 200px;
+  background-color:lightskyblue;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  overflow-y: hidden;
+}
+
+.WriteFunctionDrawer{
+  position:relative;
+  width: 80px;
+  height: 205px;
+  border-color: black;
+  background-color: black;
+}
+
+.WriteFunctionButton{
+  width: 80px;
+  height: 200px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  overflow-y: hidden;
+}
+
+.function_mainscreen{
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}

@@ -1,0 +1,142 @@
+{
+  "configVersion": 1,
+  "timestamp": 1594252320577,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.dc1aae3cee329f3d057c.js",
+        "/manifest.webmanifest",
+        "/polyfills.145db690d2a0cd6b4815.js",
+        "/runtime.e227d1a0e31cbccbf8ec.js",
+        "/scripts.648269857f59b193df6b.js",
+        "/styles.729101b552507a53ec60.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/128*128.png",
+        "/assets/144*144.png",
+        "/assets/152*152.png",
+        "/assets/192*192.png",
+        "/assets/1blogo.png",
+        "/assets/384*384.png",
+        "/assets/512*512.png",
+        "/assets/72*72.png",
+        "/assets/96*96.png",
+        "/assets/AirCon.png",
+        "/assets/CheckMark.png",
+        "/assets/Heater.png",
+        "/assets/NFC.png",
+        "/assets/Oven.png",
+        "/assets/Washer copy.png",
+        "/assets/advantium.png",
+        "/assets/airconditioner.png",
+        "/assets/close.png",
+        "/assets/ic_aircon.png",
+        "/assets/ic_loading_forever.gif",
+        "/assets/ic_oven.png",
+        "/assets/ic_washer.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img_backgournd_board.png",
+        "/assets/information.png",
+        "/assets/nfc_load.gif",
+        "/assets/nfcservice.js",
+        "/assets/pac.png",
+        "/assets/splash.gif",
+        "/assets/symbol.png",
+        "/assets/washer.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/128*128.png": "6e4cc45e73a9f2b2999930e9afacf0c14a9d30f9",
+    "/assets/144*144.png": "993f72925987a3eddbcd30cb0e4b5e59bf31d4c5",
+    "/assets/152*152.png": "36c6819078ed7a63df88da03b61aeba6351e1ec2",
+    "/assets/192*192.png": "2de4cdb8adfa278d043cf6e421e8c1bae9663bcc",
+    "/assets/1blogo.png": "f2431706c0102e6f04779b00e0deef6988b2c758",
+    "/assets/384*384.png": "8f115d1d58017c3d68f0e3aee36af3cbbba14d07",
+    "/assets/512*512.png": "606e581a0fa41c3d8b1c79a94b45cc71195a9500",
+    "/assets/72*72.png": "a08d578ef01a08afb98f08da2ae17d061ad5d844",
+    "/assets/96*96.png": "f4fc34b2776919a718665b4d2c7fba72ab90db09",
+    "/assets/AirCon.png": "3de76deda3445f74424fbe62bbdf7d144dd1c156",
+    "/assets/CheckMark.png": "b8836d12eab7adc8b090044ad52114ca1192b7bb",
+    "/assets/Heater.png": "9d2592ba54fffff4a5491b88563e96e74fbe56a4",
+    "/assets/NFC.png": "f1c977628eae9ef3b1e656664645b4db3785fd35",
+    "/assets/Oven.png": "8082641a4a6590677796c88ec399818dc1a00e4a",
+    "/assets/Washer copy.png": "4e352d6d46e8b1198dcae4f68b737da89f385655",
+    "/assets/advantium.png": "2f59e8d249b88aeb111848d9e79b01d7c3b1bd8c",
+    "/assets/airconditioner.png": "26749ff669e990775a69b091a86a43be10523623",
+    "/assets/close.png": "c0752e46d583e7984170c663fe29174cda4e24d1",
+    "/assets/ic_aircon.png": "99618fe2f77aedb028b194af20fed927b3afbd6f",
+    "/assets/ic_loading_forever.gif": "4c5e14c458a17ee5f69cdf0e9537419046cb0737",
+    "/assets/ic_oven.png": "5878d7b8b334c15521dc579351b18cf4dee52fe7",
+    "/assets/ic_washer.png": "95e6b4101f01de67962941d160d7161e9b9b83e8",
+    "/assets/icons/icon-128x128.png": "6e4cc45e73a9f2b2999930e9afacf0c14a9d30f9",
+    "/assets/icons/icon-144x144.png": "993f72925987a3eddbcd30cb0e4b5e59bf31d4c5",
+    "/assets/icons/icon-152x152.png": "36c6819078ed7a63df88da03b61aeba6351e1ec2",
+    "/assets/icons/icon-192x192.png": "2de4cdb8adfa278d043cf6e421e8c1bae9663bcc",
+    "/assets/icons/icon-384x384.png": "8f115d1d58017c3d68f0e3aee36af3cbbba14d07",
+    "/assets/icons/icon-512x512.png": "606e581a0fa41c3d8b1c79a94b45cc71195a9500",
+    "/assets/icons/icon-72x72.png": "a08d578ef01a08afb98f08da2ae17d061ad5d844",
+    "/assets/icons/icon-96x96.png": "f4fc34b2776919a718665b4d2c7fba72ab90db09",
+    "/assets/img_backgournd_board.png": "ba04f7c9c98b5a23c4f4ba1112a830b6c6499b7f",
+    "/assets/information.png": "191743b02467ac4b597c27e6a7931df1a487c765",
+    "/assets/nfc_load.gif": "ff1ed14cb9eeac91d5d0a522ba30428b46ad275b",
+    "/assets/nfcservice.js": "1bb455f33e99ad19f9ff9789e82900ef24031a2f",
+    "/assets/pac.png": "5e04ad411816991a2ed2d641dd9f7bc039f5ca7e",
+    "/assets/splash.gif": "4b191accb99ed74c2544ada470b8ecac73aaa556",
+    "/assets/symbol.png": "f835d304ec7b6c7201336fd96be6d41b5078f574",
+    "/assets/washer.png": "451b18760abfa07c1b36957adf0722c1d2f362d7",
+    "/favicon.ico": "ecb08c6408023bd31e052d63094f740b0758d512",
+    "/index.html": "3fa4d38deca535fd5bf949c3a645fde6c70cf9f3",
+    "/main.dc1aae3cee329f3d057c.js": "756d74cab095def298843b2b154ef607577188df",
+    "/manifest.webmanifest": "dfd212b06ee969decdc8bac8d34405ab55524503",
+    "/polyfills.145db690d2a0cd6b4815.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
+    "/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/scripts.648269857f59b193df6b.js": "0c757e82941284a78a85758b7c6a6eb5ad120d3b",
+    "/styles.729101b552507a53ec60.css": "10dd1e48e60de156c64efca68b6389ec02fde88e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+div.boardmain {
+  width: 100%;
+  height: 100%;
+  background:url('/assets/img_backgournd_board.png');
+  background-size : cover;
+}
+
+div.top-area {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+div.middle-nfc-area {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.centered {
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+  padding: 1em;
+  color: white;
+}
+
+
+
+
+/*.example-form {*/
+/*  width: 100%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+
+
+
+
+.center_display_response {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  font-size: 70px;
+  z-index: 2
+
+}
+
+
+
+
+.bottom_card_area {
+  justify-content: center;
+  /*background-color: aqua;*/
+  position: relative;
+  align-items: center;
+}
+
+
+
+
+/*=====*/
+
+mat-label.nfc-tag-title {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+mat-label.nfc-tag-title-hint {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: slategray;
+  align-items: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+
+div.nfc-tag-underline {
+  height: 1px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #4c4c4c;
+}
+
+
+
+div.bottom-info-area {
+  padding-top: 20px;
+  width: 100%;
+  height: 50%;
+  /*background-color: coral;*/
+  margin-top: 40px;
+
+}
+
+.mat-card {
+  width: 75%;
+  /*border-radius: 30px;*/
+  border-radius: 5px 5px 5px 5px;
+  md-colors: white;
+  justify-content: center
+}
+
+td.card-nfc-icon {
+  width: 15%;
+  color: white;
+  /*background-color: #50ffd6;*/
+}
+
+td.card-nfc-action {
+  width: 70%;
+  color: white;
+  font-size: 12px;
+  /*background-color: #ffbd00;*/
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+
+td.card-nfc-sub-action {
+  width: 20%;
+  color: white;
+  font-size: 30px;
+  /*background-color: #ffbd00;*/
+
+  text-align: center;
+}
+
+img.card-appliance-icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+
+img.nfc-load {
+  display: flex;
+  max-height: 60%;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background-position: center center;
+  margin: auto;
+}
+
+img.card-nfc-load {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+
+div.nfc-server-response {
+  display: flex;
+  max-height: 80%;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-size: 30px;
+}
+
+.bottom-team-name {
+  display: flex;
+  max-height: 80%;
+  justify-content: center;
+  position: relative;
+  color: #71716f;
+  font-size: 15px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<head>
+  <meta http-equiv="origin-trial"
+        content="AoJs1BWN33mH677NcXjFQ0ONC5pPkPC82lcgJ0fcp4tPDj84Ne5e1/8NEBlf5ZLqRtQXJ+KKUBySUXebtKs1agcAAABqeyJvcmlnaW4iOiJodHRwczovL2dlYS1hc3NlbWJsZS52ZXJjZWwuYXBwOjQ0MyIsImZlYXR1cmUiOiJXZWJORkMiLCJleHBpcnkiOjE1OTU5ODA3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+</head>
+<div class="boardmain" >
+
+  <form style="height: 10%;">
+    <div style="padding-top: 30px;">
+
+      <mat-label *ngIf="nfcReadTagId.length > 0" class="nfc-tag-title">{{receivedTagData?.name}}</mat-label>
+      <mat-label *ngIf="nfcReadTagId.length <= 0" class="nfc-tag-title-hint">Tag your Command</mat-label>
+
+    <div class="nfc-tag-underline"></div>
+    </div>
+  </form>
+
+<!--      <input *ngIf="" " [value]=tagInfo.nfcName>-->
+
+    <div *ngIf="nfcReadTagId.length <= 0" class="middle-nfc-area">
+      <img #imgNfcLoad class="nfc-load" src="assets/ic_loading_forever.gif">
+    </div>
+
+  <div *ngIf="nfcReadTagId.length > 0" class="bottom-info-area" >
+    <mat-grid-list cols="1" rowHeight="fit" gutterSize="10px" [style.height]="'200px'">
+<!--      <mat-grid-tile *ngFor="let commandData of receivedTagData.commandData">-->
+        <mat-grid-tile  *ngFor="let data of receivedTagData.commandData" >
+        <mat-card [style.background]="getApplianceColor(data.applianceId)">
+          <table style="width: 100%; height: 60px">
+            <tbody>
+            <tr style="width: 100%;">
+              <td class="card-nfc-icon">
+                <img class="card-appliance-icon" [src]=getApplianceIcon(data.applianceId)>
+              </td>
+              <td class="card-nfc-action">{{getCommandDescription(data)}}</td>
+              <td>
+                <img *ngIf="!receivedResponse(data.commandIndex)" #imgNfcLoad class="card-nfc-load"
+                     src="/assets/ic_loading_forever.gif">
+                <div
+                  *ngIf="receivedResponse(data.commandIndex) && (responseList.get(data.commandIndex).length != 0)"
+                  class="nfc-server-response">{{ responseList.get(data.commandIndex) }} </div>
+                <img
+                  *ngIf="receivedResponse(data.commandIndex) && (responseList.get(data.commandIndex).length == 0)"
+                  #imgNfcLoad class="card-nfc-load"
+                  src="/assets/CheckMark.png">
+
+
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+<!--  <button (click)="onClickLoad()">Add Income</button>-->
+<!--  <button (click)="onCreateTagData()">onCreateTagData</button>-->
+<!--  <button (click)="onReadTagData()">onReadTagData</button>-->
+<!--  <button (click)="onSendCommand()">onSendCommand</button>-->
+<!--  <button (click)="onReadTagInformation()">onReadTagInformation</button>-->
+<!--  <button (click)="onObserveTagData()">onObserveTagData</button>-->
+<!--  <button (click)="onGetTagId()">onGetTagId</button>-->
+
+<!--  <button (click)="onConnect()">onConnect</button>-->
+<!--  <button (click)="onDisConnect()">onDisConnect</button>-->
+
+
+
+
+  <button (click)="onClickReadNfcTest()">Read Test</button>
+  <button (click)="onClickSendNfcTest()">Send Test</button>
+  <button (click)="onClickReadSendNfcTest()">Read Send Test</button>
+<!--  <button (click)="onClear()">Clear</button>-->
+
+  <div class="bottom_info">
+
+    <mat-label class="bottom-team-name">"GEA.Ssemble"</mat-label>
+  </div>
+</div>

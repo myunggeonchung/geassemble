@@ -1,0 +1,34 @@
+<div class="main">
+    <div class="sumbmain">
+        <div class="modal-header">
+            <h4 class="modal-title">{{tagName}}</h4>
+            <button (click)="onClose()" class="informationbutton"><img src="assets/close.png" alt="btnImages" class="btnImages"></button>
+            <!-- <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button> -->
+        </div>
+    
+        <hr class = 'mainline'>
+    
+        <div class="modal-body">
+            <!-- HTML table for displaying a challenge details -->
+            <table class='table table-hover table-responsive table-bordered'>
+                <tr>
+                    <td class="info1">[Location]</td>
+                    <td class="info2">{{tagLocation}}</td>
+                </tr>
+                <tr>
+                    <td class="info1">[Counts]</td>
+                    <td class="info2">{{tagCount}}</td>
+                </tr>
+                <tr>
+                    <td class="info1">[Time]</td>
+                </tr>
+                <tr *ngFor="let time of tagTime">
+                    <td class="info2">{{time}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+

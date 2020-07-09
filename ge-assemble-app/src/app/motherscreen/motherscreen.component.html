@@ -1,0 +1,27 @@
+<div class="topmain">
+    <div class="imgarea">
+        <img src="assets/symbol.png" class="symbol">
+        <img src="assets/1blogo.png" class="logo">
+    </div>
+    <div class="menuarea">
+        <table class="menutable">
+            <tr class="buttontr">
+                <ng-container *ngFor="let stringName of stateStrings; index as i">
+                    <td><button [style.color]="getButtonTextColor(i)" (click)="onButtonClicked(i)">{{stringName}}</button></td>
+                </ng-container>
+            </tr>
+        </table>
+    </div>
+    <div class="bararea">
+        <table class="bartable">
+            <tr class="clickbar">
+                <ng-container *ngFor="let stringName of stateStrings; index as i">
+                    <td [style.background]="getBarColor(i)"></td>
+                </ng-container>
+            </tr>
+        </table>
+    </div>
+</div>
+<span *ngIf="myMenuState == MenuState.write"><app-screen1-add-function></app-screen1-add-function></span>
+<span *ngIf="myMenuState == MenuState.read"><app-screen2-read-function></app-screen2-read-function></span>
+<span *ngIf="myMenuState == MenuState.database"><app-screen3-see-function></app-screen3-see-function></span>

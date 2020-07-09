@@ -1,0 +1,12 @@
+.AcFunctionScroll{
+    position: absolute;
+    top: 15px;
+    left: -70px;
+    height:612px;
+    width:500px;
+    background-color: aliceblue;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    overflow-y: hidden;
+};

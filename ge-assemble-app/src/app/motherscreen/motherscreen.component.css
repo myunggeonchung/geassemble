@@ -1,0 +1,92 @@
+div.board-main {
+  width: 100%;
+  height: 100%;
+  background-image:url('/assets/img_backgournd_board.png');background-repeat: no-repeat;
+}
+
+img.symbol {
+    width: 137px;
+    height: 25px;
+    float: left;
+    padding-top: 27px;
+    padding-left: 28px;
+}
+
+img.logo {
+    width: 32px;
+    height: 27px;
+    float: right;
+    padding-top: 26px;
+    padding-right: 28px;
+}
+
+table.menutable {
+    height: 100%;
+    padding: 0px;
+}
+
+div.topmain {
+    width: 100%;
+    height: 132px;
+    background-image:url('/assets/img_backgournd_board.png');background-repeat: no-repeat;
+}
+
+div.imgarea {
+    width: 100%;
+    height: 85px;
+}
+
+div.menuarea {
+    width: 100%;
+    height: 43px;
+    vertical-align: middle;
+}
+
+div.bararea {
+    width: 100%;
+    height: 4px;
+}
+
+table {
+    width: 100%;
+    height: 2px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+	background: none;
+    border: none;
+}
+
+tr.buttontr{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+
+.clickbar td {
+    height: 2px;
+    width: 33%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+table.bartable {
+    height: 2px;
+    box-shadow: -0px -0.2px 1px -0.3px grey inset;
+}
